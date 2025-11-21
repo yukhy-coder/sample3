@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* --- General Styles --- */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* --- Main Container --- */
+        .container {
+            background-color: #ffffff;
+            width: 90%;
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap; /* Allows stacking on mobile */
+        }
+
+        /* --- Left Side: Contact Info --- */
+        .contact-info {
+            background-color: #333; /* Dark background */
+            color: #fff;
+            padding: 40px;
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .contact-info h2 {
+            margin-top: 0;
+        }
+
+        .info-item {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .info-item span {
+            margin-left: 15px;
+            font-size: 16px;
+        }
+
+        /* --- Right Side: The Form --- */
+        .contact-form {
+            padding: 40px;
+            flex: 1.5; /* Form takes slightly more space */
+            min-width: 300px;
+        }
+
+        .contact-form h2 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* Ensures padding doesn't increase width */
+            font-size: 16px;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #333;
+            outline: none;
+        }
+
+        textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* --- Mobile Responsiveness --- */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>Have a question about Git branching or merging? Send us a message!</p>
+            
+            <div class="info-item">
+                <strong>📍 Address:</strong>
+                <span>123 Code Street, Tech City</span>
+            </div>
+            <div class="info-item">
+                <strong>📧 Email:</strong>
+                <span>contact@example.com</span>
+            </div>
+            <div class="info-item">
+                <strong>📞 Phone:</strong>
+                <span>+1 (555) 123-4567</span>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send a Message</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+                </div>
+
+                <button type="submit">Submit Message</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
