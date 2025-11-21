@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enrollment Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+        font-family: "SF Pro", Arial, sans-serif; 
+      }
+
+      .rect-input,
+      .rect-textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 14px;
+        font-family: inherit;
+      }
+
+      .clickable {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="guardian-information">
+      <img class="group-20" src="images/Rectangle 16.png" />
+      <img class="rectangle-13" src="images/Rectangle 13.png" />
+
+      <div class="group-49">
+        <div class="group-48">
+          <img class="rectangle-47" src="rectangle-470.svg" />
+          <div class="group-8">
+            <div class="next">Next</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="line-4"></div>
+      <div class="academic-information">Academic Information</div>
+      <div class="enrollment-details">Enrollment Details</div>
+      <div class="student-information">Student Information</div>
+      <div class="ellipse-8"></div>
+      <div class="line-9"></div>
+      <div class="ellipse-9"></div>
+      <div class="line-10"></div>
+      <div class="parent-guardian-information">Parent/Guardian Information</div>
+      <div class="ellipse-10"></div>
+      <div class="_3"></div>
+      <div class="ellipse-11"></div>
+      <div class="_4">4</div>
+      <div class="mingcute-check-fill">
+        <img class="group" src="images/Vector.png" />
+      </div>
+      <div class="mingcute-check-fill2">
+        <img class="group2" src="images/Vector.png" />
+      </div>
+      <div class="mingcute-check-fill2">
+        <img class="group3" src="images/Vector.png" />
+      </div>
+      
+      <!--////////////////// Main Contents ////////////////////-->
+      <img class="group-17" src="images/Group 17.png" />
+      <div class="line-8"></div>
+      <img class="group-52" src="images/Group 57.png" />
+      
+      <img class="group-50 clickable" src="images/Group 50.png" alt="Next Button" />
+
+      <div class="group-522">
+        <div class="ellipse-12"></div>
+        <img class="vector" src="images/diary-clasp 1.png" />
+        <div class="parent-guardian-information2">Enrollment Details</div>
+      </div>
+      
+
+      <form novalidate>
+        <div>
+          <label for="enroll-date">Enrollment Date</label>
+          <input type="date" id="enroll-date" name="enrollmentDate" placeholder="Enter enrollment date" autocomplete="off" />
+        </div>
+
+        <div>
+          <label for="enroll-status">Enrollment Status</label>
+          <select id="enroll-status" name="enrollmentStatus" aria-placeholder="Enter status">
+            <option value="" disabled selected hidden>Enter status</option>
+            <option>New</option>
+            <option>Regular</option>
+            <option>Irregular</option>
+            <option>Transferee</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="academic-year">Academic Year</label>
+          <input type="text" id="academic-year" name="academicYear" placeholder="Enter year" autocomplete="off" />
+        </div>
+
+        <div>
+          <label for="semester">Semester</label>
+          <input type="text" id="semester" name="semester" placeholder="Enter semester" autocomplete="off" />
+        </div>
+
+        <div>
+          <label for="program">Program</label>
+          <select id="program" name="program" aria-placeholder="Enter program">
+            <option value="" disabled selected hidden>Enter program</option>
+            <option>Bachelor of Arts in English Language</option>
+            <option>Bachelor of Arts in Literature</option>
+            <option>Bachelor of Science in Psychology</option>
+            <option>Bachelor of Elementary Education</option>
+            <option>Bachelor in Secondary Education Mathematics</option>
+            <option>Bachelor of Technology and Livelihood Education Home Economics</option>
+            <option>Bachelor in Secondary English</option>
+            <option>Bachelor of Science in Hospitality Management</option>
+            <option>Bachelor of Science in Tourism Management</option>
+            <option>Bachelor in Industrial Technology - Garments Technology</option>
+            <option>Bachelor in Industrial Technology - Drafting Technology</option>
+            <option>Bachelor in Industrial Technology - Automotive Technology</option>
+            <option>Bachelor in Industrial Technology - Electronics Technology</option>
+            <option>Bachelor in Industrial Technology - Computer  Technology</option>
+            <option>Bachelor of Science in Information Technology</option>
+            <option>Bachelor of Science in Industrial Engineering</option>
+            <option>Bachelor of Science in Environmental Science</option>
+            <option>Bachelor of Science in Forestry</option>
+            <option>Bachelor of Science in Agriculture</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="year-level">Year Level</label>
+          <select id="year-level" name="yearLevel" aria-placeholder="Enter year level">
+            <option value="" disabled selected hidden>Enter year level</option>
+            <option>1st Year</option>
+            <option>2nd Year</option>
+            <option>3rd Year</option>
+            <option>4th Year</option>
+          </select>
+        </div>
+
+      <img class="ep-back clickable" src="images/ep_back.png" alt="Back Button" />
+
+      <img
+        class="black-modern-online-school-logo-2"
+        src="images/Black Modern Online School Logo 2.png"
+      />
+      
+    </div>
+
+    <script>
+      document.querySelector(".ep-back").addEventListener("click", function () {
+        alert("Going back to previous page...");
+        window.history.back(); 
+      });
+
+      document.querySelector(".group-50").addEventListener("click", function () {
+        alert("Going to next step...");
+        window.location.href = "nextpage.html"; 
+      });
+    </script>
+  </body>
+</html>
